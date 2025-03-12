@@ -10,19 +10,15 @@ const login = async (userInfo: UserLogin) => {
       body: JSON.stringify(userInfo),
     });
 
-    const data = await response.json();
-
     if (!response.ok) {
-      throw new Error( 'User information not retrieved, check network tab!');
+      throw new Error('Login failed');
     }
 
-    return data;
-  } catch (err) {
-    console.log('Error from user login: ', err);
-    return Promise.reject('Could not fetch user info');
+    return await response.json();
+  } catch (error) {
+    console.error('Login error:', error);
+    throw error;
   }
-};
-
-
+}
 
 export { login };
