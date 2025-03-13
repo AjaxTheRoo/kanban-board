@@ -31,6 +31,9 @@ To test the application locally:
    ```  
    This will populate the database and start the development server.
 
+## Link
+Here is a link to the deployed site: https://kanban-board-0ty5.onrender.com
+
 ## License
 This project is licensed under the MIT License.
 [View License](https://opensource.org/licenses/MIT)
