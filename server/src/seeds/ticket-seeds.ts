@@ -1,5 +1,4 @@
 import { Ticket } from '../models/ticket.js';
-
 export const seedTickets = async () => {
   await Ticket.bulkCreate([
     { name: 'Design landing page', status: 'In Progress', description: 'Create wireframes and mockups for the landing page.', assignedUserId: 1 },
